@@ -1,14 +1,12 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
-<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
-<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
-
-<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="../jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css" />
+<link href="../jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css" />
+<script src="../jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="../jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -107,46 +105,50 @@ img {
   opacity: 1;
 }
 </style>
-</head> 
-<body> 
+</head>
 
-<div id="page" data-role="page" data-theme="e">
-	<div data-role="header" data-theme="e">
-		<div align="center"><img src="img/lvc.png" width="90" height="90"></div>
-		<h1>Information Technology IT60.1</h1>
-	</div>
-	<div data-role="content">	
-    <h2 style="text-align:center">Slideshow Gallery IT60.1</h2>
+<body>
+<div data-role="page" id="pageActivity">
+  <div data-role="header" data-theme="e"><a href="../index.html" data-icon="back" data-iconpos="left">Back</a>
+  <a href="../index.html" data-icon="home" data-iconpos="left">Home</a>
+  <div align="center"><img src="../img/lvc.png" width="90" height="90">
+    </div>
+    <h1>Activity IT60.1</h1>
+    <h2>กิจกรรมที่ผ่านเข้ามา</h2>
+  </div>
+  <div data-role="content" data-theme="a">
+ <h2 style="text-align:center">Slideshow Gallery IT60.1</h2>
 
 <div class="container">
+
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-    <img src="img/1.jpg" style="width:100%">
+    <img src="a0/1.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-    <img src="img/2.jpg" style="width:100%">
+    <img src="a1/1.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>
-    <img src="img/3.jpg" style="width:100%">
+    <img src="a3/1.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-    <img src="img/4.jpg" style="width:100%">
+    <img src="a6/3.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-    <img src="img/5.jpg" style="width:100%">
+    <img src="a0/18.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-    <img src="img/6.jpg" style="width:100%">
+    <img src="a1/20180528_๑๙๐๒๐๑_0090.jpg" style="width:100%">
   </div>
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -157,23 +159,15 @@ img {
   </div>
 
   <div class="row">
+    <div class="column"><img class="demo cursor" src="a0/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="New student IT60" /></div>
+    <div class="column"><img class="demo cursor" src="a1/1.jpg" style="width:100%" onclick="currentSlide(2)" alt="New student IT61" /></div>
+    <div class="column"><img class="demo cursor" src="a3/1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Sport Day" /></div>
     <div class="column">
-      <img class="demo cursor" src="img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="New student IT">
+      <img class="demo cursor" src="a6/3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Dance Day">
     </div>
+    <div class="column"><img class="demo cursor" src="a0/18.jpg" style="width:100%" onclick="currentSlide(5)" alt="New student IT60" /></div>    
     <div class="column">
-      <img class="demo cursor" src="img/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="IT VS ACCOUNTING">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Sport Day">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Sport Day">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="New student IT">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="img/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Teacher">
+      <img class="demo cursor" src="a1/20180528_๑๙๐๒๐๑_0090.jpg" style="width:100%" onclick="currentSlide(6)" alt="New student IT61">
     </div>
   </div>
 </div>
@@ -208,28 +202,26 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-		<div align="center">Menu </div>
-      <div align="center">
-        <table width="20%">
-          <tr>
-            <td><a href="Teacher.html"><button type="button">อาจารย์ประจำแผนก</button></a></td>
-            <td><a href="Student/Student.html"><button type="button">เด็กๆไอทีผู้น่ารัก</button></a></td>
-          </tr>
-          <tr>
-            <td><a href="Activity/Activity.html"><button type="button">กิจกรรมของพวกเรา</button></a></td>
-            <td><a href="https://drive.google.com/drive/folders/1pls6vVOtXuH_M-0dJKu7FiwXSO81KNFW?usp=sharing"><button type="button">รูปภาพของพวกเรา</button></a></td>
-          </tr>
-  </table>
-      </div>
 
-	</div>
-	<div data-position="fixed" data-role="footer" data-theme="e">
+    <div align="center">
+    <div align="center">Menu </div>
+      <ul data-count-theme="b" data-role="listview" data-split-theme="d">
+      <li><a href="Activity/Activity00.html">รับน้อง60</a></li>
+        <li><a href="Activity01.html">ต้อนรับน้อง61</a></li>
+        <li><a href="Activity02.html">กีฬาสีแผนก</a></li>
+        <li><a href="Activity03.html">กีฬาสี</a></li>
+        <li><a href="Activity04.html">ไหว้ครู</a></li>
+        <li><a href="Activity05.html">ปลูกต้นไม้</a></li>
+        <li><a href="Activity06.html">เต้น</a></li>
+      </ul>
+
+</div>
+  </div>
+  
+  <div data-position="fixed" data-role="footer" data-theme="e">
     	<h3>Lampang Vocational College</h3>
 		<h4>Design By IT60.1 LVC</h4>
 	</div>
 </div>
-
-
-
 </body>
 </html>
